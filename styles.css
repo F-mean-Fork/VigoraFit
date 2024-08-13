@@ -1,0 +1,1666 @@
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('.\\fonts\\lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('.\\fonts\\lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('.\\fonts\\lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgb(29 29 32);
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper_full{
+    max-width: 1262px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after{
+    display: block;
+    content: '';
+    width: 300px;
+    height: 5px;
+    background-color: rgb(199, 15, 15);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*Anchors styles start*/
+/* #info,
+#facilities,
+#trainers,
+#rooms,
+#register,
+#contact{
+ padding: 50px;   
+} */
+/*Anchors styles end*/
+
+/* Header styles start */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.4s linear;
+    padding-bottom: 10px;
+    z-index: 990;
+}
+
+.header_active{
+    background: #1d1d20;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header_logo-pic{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header_item{
+    margin-right: 70px;
+}
+
+.header_item:last-child{
+    align-content: center;
+    display: inline-block;
+    margin-right: 0;
+    background-color: rgb(199, 15, 15);
+    border-radius: 4px;
+    height: 40px;
+    width: auto;
+    padding: 0 20px;
+    transition: all ease 0.5s;
+}
+
+.header_item:last-child:hover,
+.header_item:last-child:active,
+.header_item:last-child:focus{
+    transform: scale(1.1);
+}
+
+.header_link{
+    font-size: 18px;
+    line-height: 24px;
+    color:white;
+    text-decoration: none;
+}
+
+.header_link:hover,
+.header_link:active,
+.header_link:focus{
+    opacity: 0.75;
+}
+
+.header_burger{
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger_line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+
+.burger_line_first{
+    top: 0;
+}
+
+.burger_line_second{
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.burger_line_third{
+    bottom:0;
+}
+
+/* Header styles end */
+
+/* Intro styles start */
+.intro{
+    min-height: 100vh;
+    background: url('..\\img\\VigoraFit.jpg') no-repeat center; 
+    background-size: cover;
+    padding-top: 200px;
+    
+}
+
+.intro_title{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: left;
+    color:white;
+    margin-bottom: 22px;
+}
+
+.search-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.search-form_link,
+.contact-button{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    background-color: rgb(199, 15, 15);
+    border-radius: 1px;
+    text-transform: uppercase;
+}
+
+.contact-button:hover,
+.contact-button:active,
+.contact-button:focus{
+    background-color: rgb(134, 11, 11);
+    transform: scale(1.08);
+}
+
+.search-form_link:hover,
+.search-form_link:active,
+.search-form_link:focus{
+    background-color: rgb(134, 11, 11);
+    transform: scale(1.08);
+}
+
+
+/* Intro styles end */
+
+/* info styles start */
+.info{
+    margin-bottom: 100px;
+}
+.info_wrap{
+    max-width: 1262px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.1593);
+    position: relative;
+}
+
+.info_title{
+    width: 100%;
+    font-weight: 500;;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 50px 100px 20px 20px;
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: white;
+    z-index: 3;
+}
+
+.info_cards{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 60px;
+}
+
+.info_cards_pic{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.info_cards_desc{
+    text-align: justify;
+}
+/* info styles end */
+
+/* Facilities styles start */
+
+.facilities{
+    margin-bottom: 100px;
+}
+
+.facilities_title{
+    margin-bottom: 20px;
+}
+
+.facilities_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+   
+}
+
+.facilities_card_fig{
+    width: 100%;
+    transition: 0.25s all;
+}
+
+.facilities_card_fig_size{
+    height: 265px;
+    object-fit: cover;
+}
+
+.facilities_card{
+    position: relative;
+    overflow: hidden;
+}
+
+.facilities_card:hover .facilities_card_fig{
+    transform: scale(1.05);
+}
+
+.facilities_card::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+
+.facilities_card_title{
+    font-size: 50px;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+}
+/* facilities styles end */
+
+/*Trainers style start */
+.trainers{
+    margin-bottom: 100px;
+}
+
+.trainers_title{
+    margin-bottom: 20px;
+}
+
+.trainers_cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainers_card_fig{
+    width: 100%;
+    transition: 0.25s all;
+}
+
+.trainers_card_fig_size{
+    height: 300px;
+    object-fit: cover;
+}
+
+.trainers_card{
+    position: relative;
+    overflow: hidden;
+}
+
+.trainers_card:hover .trainers_card_fig{
+    transform: scale(1.05);
+}
+
+.trainers_card::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50px;
+    background-color: rgba(21, 24, 36, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2; 
+}
+
+.trainers_card_title{
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    z-index: 3;
+}
+
+
+.trainers_card:nth-child(1) .trainers_card_title,
+.trainers_card:nth-child(2) .trainers_card_title {
+  left: 8px;
+}
+
+.trainers_card:nth-child(3) .trainers_card_title {
+  left: 35px;
+}
+
+.trainers_card:nth-child(4) .trainers_card_title {
+  left: 1px;
+}
+
+
+
+/* Fitness room section start */
+.rooms{
+    margin-bottom: 100px;
+}
+
+.rooms_title{
+    margin-bottom: 20px;
+}
+
+.room_photo{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.rooms_room{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 30px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+
+.room_title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.room_info{
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.room_desc{
+    line-height: 28px;
+}
+/* Fitness room section end */
+
+
+/*  Register styles start */
+
+.wrapper_full_resister{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.form-block {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.register_title{
+    font-size: 60px;
+    font-weight: 900;
+}
+  
+.form-block label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+.form-block input[type="text"], 
+.form-block input[type="email"],
+.form-block input[type="message"] {
+    font-size: 14px;
+    font-family: 'Lato';
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    opacity: 0.85;
+    border-radius: 10px;
+}
+
+.form-block textarea {
+    opacity: 0.85;
+    font-size: 14px;
+    font-family: 'Lato';
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-block button[type="submit"] {
+    background-color:  rgb(134, 11, 11);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.form-block button[type="submit"]:hover {
+    background-color:  rgb(134, 11, 11);
+
+}
+.form-block-policy{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.form-block-policy_link{
+    text-decoration: none;
+    color: rgb(134, 11, 11);
+}
+
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="message"]::placeholder {
+    opacity: 0.85;
+    font-size: 14px;
+}
+
+/*  Register styles end */
+
+/*Contacts styles start*/
+
+.contacts{
+    margin-bottom: 100px;
+}
+
+.contact_title{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form  h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-form div{
+    width: 320px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+.contact-form-link{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(29 29 32);
+}
+
+.contact-form-link:hover,
+.contact-form-link:active,
+.contact-form-link:focus{
+    text-decoration: underline;
+}
+
+
+  
+/*Contacts styles end*/
+
+/* Footer styles start */
+.footer{
+    background: rgb(29 29 32);
+    padding: 50px 0;
+}
+
+.footer_item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo-pic{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 100px;
+}
+
+.footer_menu-title{
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.footer_menu-link{
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer_menu-item{
+    margin-bottom: 10px;
+}
+
+.footer_menu-item:last-child{
+    margin-bottom: 0;
+}
+
+.footer_menu-link:hover, .footer_menu-link:focus, .footer_menu-link:active{
+    opacity: .75;
+}
+/* Footer styles  end */
+
+/* Policy styles start */
+
+.policy_wrapper{
+    background: #1d1d20;
+}
+
+.privacy_main_header{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+.privacy_subtitle{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.privacy_desc{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.privacy_desc a{
+    text-decoration: none;
+    color: rgb(199, 15, 15);
+}
+
+.privacy_desc a:hover,
+.privacy_desc a:active,
+.privacy_desc a:focus{
+    text-decoration: underline;
+}
+
+/* Policy styles end */
+
+/*Thanks page styles start*/
+
+.thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0 auto;
+}
+
+.thanks_container{
+    width: 80%;
+    height: auto;
+    margin: 0 20px;
+    padding: 20px;
+    color: #ffffff;
+    border: 2px solid #1d1d20b7;
+    background-color: #1d1d20b7;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.thanks_title{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.thanks_desc{
+    margin-bottom: 30px;
+}
+
+.thanks_button{
+    background-color: rgb(134, 11, 11);
+    border: 1px solid rgb(134, 11, 11); 
+    box-shadow: 0 0 10px rgb(195, 29, 29);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: #f9f9f9;
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+.thanks_button:hover,
+.thanks_button:active,
+.thanks_button:focus{
+    text-decoration: underline;
+}
+
+/* Media start*/
+
+@media screen and (max-width: 540px	){
+    .header{
+        background-color: #1d1d20b7;
+        padding-bottom: 0;
+    }
+
+    .header{
+        background-color: #1d1d20b7;
+        padding-bottom: 0;
+    }
+
+    .header_active{
+        background: #1d1d20;
+    }
+
+    .header_burger{
+        display: block;
+    }
+    .header_nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #1d1d20;
+        z-index: 10;
+        padding: 150px 25px;
+        transform: translateX(100%);
+        transition: 0.2s all linear;
+
+    }
+    .header_nav_active{
+        transform: translateX(0);
+    }
+    .header_item{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+
+    }
+
+    .header_item:last-child{
+        align-content: center;
+        display: inline-block;
+        background-color: rgb(199, 15, 15);
+        border-radius: 4px;
+        height: auto;
+        padding: 0 4px;
+        margin-bottom: 0;
+    }
+
+    .header_link{
+        font-size: 30px;
+        color: white;
+        line-height: 50px;
+        font-weight: 700;
+    }
+
+
+    .header_nav-close{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header_nav-close_line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+    }
+    .header_nav-close_line:first-child{
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close_line:last-child{
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .info{
+        margin-bottom: 50px;
+    }
+
+    .intro_title{
+        
+        font-size: 34px;
+        line-height: 40px;
+    }
+    
+    .search-form{
+        gap: 20px;
+    }
+    
+    .search-form_link,
+    .contact-button{
+        padding: 15px;
+    }
+
+    .info_title{
+        padding: 10px 100px 20px 20px;
+    }
+
+    .info_cards{
+        display: flex;
+        padding: 30px;
+        gap: 30px;
+        flex-direction: column;
+    }
+    
+    .info_cards_pic{
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .facilities{
+        margin-bottom: 50px;
+    }
+    
+    .facilities_cards{
+        grid-gap: 5px;
+       
+    }
+    
+    .facilities_card_fig{
+        width: 100%;
+        transition: 0.25s all;
+    }
+    
+    .facilities_card_fig_size{
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .facilities_card::before{
+        background-color: rgba(21, 24, 36, 0.65);
+    }
+    
+    .facilities_card_title{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 27px;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .trainers{
+        margin-bottom: 50px;
+    }
+    
+    .trainers_title{
+        margin-bottom: 20px;
+    }
+    
+    .trainers_cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+
+    }
+    
+    .trainers_card_fig{
+        width: 100%;
+        transition: 0.25s all;
+    }
+    
+    .trainers_card_fig_size{
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .trainers_card::before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 60px;
+        background-color: rgba(21, 24, 36, 0.8);
+    }
+    
+    .trainers_card_title{
+        width: 90%;
+        color: white;
+        position: absolute;
+        bottom: 5px;
+        z-index: 3;
+    }
+    
+    
+    .trainers_card:nth-child(1) .trainers_card_title,
+    .trainers_card:nth-child(2) .trainers_card_title {
+        left: 5px;
+    }
+    
+    .trainers_card:nth-child(3) .trainers_card_title {
+      left: 5px;
+    }
+    
+    .trainers_card:nth-child(4) .trainers_card_title {
+      left: 5px;
+    }
+    
+    .rooms{
+        margin-bottom: 50px;
+    }
+    
+   
+    .room_photo{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .rooms_room{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+    
+    .room_title{
+        text-align: center;
+    }
+    
+    .room_info{
+        padding-left: 0px;
+        text-align: justify;
+        padding: 0 10px;
+    }
+    
+    .register_title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .form-block textarea {
+        font-family: 'Lato';
+        font-size: 14px;
+    }
+    
+    .form-block-policy{
+        font-size: 14px;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder {
+        opacity: 0.85;
+        font-family: inherit;
+        font-size: 14px;
+    }
+    
+    .contacts{
+        margin-bottom: 50px;
+    }
+    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer{
+        background: rgb(29 29 32);
+        padding: 20px 0;
+    }
+    
+    .footer_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_logo-pic{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    .footer_nav{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 50px;
+    }
+    
+    .footer_menu-title{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .footer_menu-link{
+        color: white;
+        text-decoration: none;
+    
+    }
+    
+    .footer_menu-item{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }  
+}
+
+@media screen and (min-width: 541px) and (max-width: 720px	){
+    .header{
+        background-color: #1d1d20b7;
+        padding-bottom: 0;
+    }
+
+    .header_active{
+        background: #1d1d20;
+    }
+
+    .header_burger{
+        display: block;
+    }
+
+    .header_nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #1d1d20;
+        z-index: 10;
+        padding: 150px 75px;
+        transform: translateX(100%);
+        transition: 0.2s all linear;
+    }
+
+    .header_nav_active{
+        transform: translateX(0);
+    }
+    .header_item{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+
+    }
+
+    .header_item:last-child{
+        align-content: center;
+        display: inline-block;
+        background-color: rgb(199, 15, 15);
+        border-radius: 4px;
+        height: auto;
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+    .header_link{
+        font-size: 30px;
+        color: white;
+        line-height: 60px;
+        font-weight: 700;
+    }
+
+    .header_nav-close{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header_nav-close_line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+    }
+    .header_nav-close_line:first-child{
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close_line:last-child{
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .info{
+        margin-bottom: 50px;
+    }
+
+    .intro_title{
+        
+        font-size: 34px;
+        line-height: 40px;
+    }
+    
+    .search-form{
+        gap: 20px;
+    }
+    
+    .search-form_link,
+    .contact-button{
+        padding: 15px;
+    }
+
+    .info_title{
+        padding: 30px 100px 20px 20px;
+    }
+
+    .info_cards{
+        display: flex;
+        padding: 30px;
+        gap: 30px;
+        flex-direction: column;
+    }
+    
+    .info_cards_pic{
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .facilities{
+        margin-bottom: 50px;
+    }
+    
+    .facilities_cards{
+        grid-gap: 5px;
+       
+    }
+    
+    .facilities_card_fig{
+        width: 100%;
+        transition: 0.25s all;
+    }
+    
+    .facilities_card_fig_size{
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .facilities_card::before{
+        background-color: rgba(21, 24, 36, 0.65);
+    }
+    
+    .facilities_card_title{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 27px;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .trainers{
+        margin-bottom: 50px;
+    }
+    
+    .trainers_title{
+        margin-bottom: 20px;
+    }
+    
+    .trainers_cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+
+    }
+    
+    .trainers_card_fig{
+        width: 100%;
+        transition: 0.25s all;
+    }
+    
+    .trainers_card_fig_size{
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .trainers_card::before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 60px;
+        background-color: rgba(21, 24, 36, 0.8);
+    }
+    
+    .trainers_card_title{
+        width: 90%;
+        color: white;
+        position: absolute;
+        bottom: 5px;
+        z-index: 3;
+    }
+    
+    
+    .trainers_card:nth-child(1) .trainers_card_title,
+    .trainers_card:nth-child(2) .trainers_card_title {
+        left: 5px;
+    }
+    
+    .trainers_card:nth-child(3) .trainers_card_title {
+      left: 5px;
+    }
+    
+    .trainers_card:nth-child(4) .trainers_card_title {
+      left: 5px;
+    }
+    
+    .rooms{
+        margin-bottom: 50px;
+    }
+    
+   
+    .room_photo{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .rooms_room{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+    
+    .room_title{
+        text-align: center;
+    }
+    
+    .room_info{
+        padding-left: 0px;
+        text-align: justify;
+        padding: 0 10px;
+    }
+    
+    .register_title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .form-block textarea {
+        font-family: inherit;
+        font-size: 14px;
+    }
+    
+    .form-block-policy{
+        font-size: 14px;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder {
+        opacity: 0.85;
+        font-family: inherit;
+        font-size: 14px;
+    }
+    
+    .contacts{
+        margin-bottom: 50px;
+    }
+    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer{
+        background: rgb(29 29 32);
+        padding: 20px 0;
+    }
+    
+    .footer_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_logo-pic{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    .footer_nav{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 150px;
+    }
+    
+    .footer_menu-title{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .footer_menu-link{
+        color: white;
+        text-decoration: none;
+    
+    }
+    
+    .footer_menu-item{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }  
+}
+
+@media screen and (min-width: 721px) and (max-width: 1320px){
+    .header{
+        background-color: #1d1d20b7;
+        padding-bottom: 0;
+    }
+
+    .header_active{
+        background: #1d1d20;
+    }
+
+    .header_burger{
+        display: block;
+    }
+    
+    .header_nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #1d1d20;
+        z-index: 10;
+        padding: 150px 75px;
+        transform: translateX(100%);
+        transition: 0.2s all linear;
+    }
+
+    .header_nav_active{
+        transform: translateX(0);
+    }
+    .header_item{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+
+    }
+
+    .header_item:last-child{
+        align-content: center;
+        display: inline-block;
+        background-color: rgb(199, 15, 15);
+        border-radius: 4px;
+        height: auto;
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+    .header_link{
+        font-size: 50px;
+        color: white;
+        line-height: 70px;
+        font-weight: 700;
+    }
+
+    .header_nav-close{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header_nav-close_line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+    }
+    .header_nav-close_line:first-child{
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close_line:last-child{
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .info{
+        margin-bottom: 50px;
+    }
+
+    .intro_title{
+        
+        font-size: 34px;
+        line-height: 40px;
+    }
+    
+    .search-form{
+        gap: 20px;
+    }
+    
+    .search-form_link,
+    .contact-button{
+        padding: 15px;
+    }
+
+    .info_title{
+        padding: 30px 100px 20px 20px;
+    }
+
+    .info_cards{
+        display: flex;
+        padding: 30px;
+        gap: 30px;
+        flex-direction: column;
+    }
+    
+    .info_cards_pic{
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .facilities{
+        margin-bottom: 50px;
+    }
+    
+    .facilities_cards{
+        grid-gap: 10px;
+       
+    }
+    
+    .facilities_card_fig{
+        width: 100%;
+        transition: 0.25s all;
+    }
+    
+    .facilities_card_fig_size{
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .facilities_card::before{
+        background-color: rgba(21, 24, 36, 0.65);
+    }
+    
+    .facilities_card_title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 27px;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .trainers{
+        margin-bottom: 50px;
+    }
+    
+    .trainers_title{
+        margin-bottom: 20px;
+    }
+    
+    .trainers_cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+    
+    .trainers_card_fig{
+        width: 100%;
+        transition: 0.25s all;
+    }
+    
+    .trainers_card_fig_size{
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .trainers_card::before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 70px;
+        background-color: rgba(21, 24, 36, 0.8);
+    }
+    
+    .trainers_card_title{
+        font-size: 24px;
+        width: 90%;
+        color: white;
+        position: absolute;
+        bottom: 5px;
+        z-index: 3;
+    }
+    
+    
+    .trainers_card:nth-child(1) .trainers_card_title,
+    .trainers_card:nth-child(2) .trainers_card_title {
+        left: 15px;
+    }
+    
+    .trainers_card:nth-child(3) .trainers_card_title {
+      left: 15px;
+      bottom: 20px;
+    }
+    
+    .trainers_card:nth-child(4) .trainers_card_title {
+      left: 15px;
+    }
+    
+    .rooms{
+        margin-bottom: 50px;
+    }
+    
+   
+    .room_photo{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .rooms_room{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+    
+    .room_title{
+        text-align: center;
+    }
+    
+    .room_info{
+        padding-left: 0px;
+        text-align: justify;
+        padding: 0 10px;
+    }
+    
+    .register_title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .form-block textarea {
+        font-family: inherit;
+        font-size: 14px;
+    }
+    
+    .form-block-policy{
+        font-size: 14px;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder {
+        opacity: 0.85;
+        font-family: inherit;
+        font-size: 14px;
+    }
+    
+    .contacts{
+        margin-bottom: 50px;
+    }
+    
+    .contact-form{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .footer{
+        background: rgb(29 29 32);
+        padding: 20px 0;
+    }
+    
+    .footer_item{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        justify-content: space-around;
+    }
+    
+    .footer_logo-pic{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .footer_nav{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 150px;
+    }
+    
+    .footer_menu-title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .footer_menu-link{
+        color: white;
+        text-decoration: none;
+    
+    }
+    
+    .footer_menu-item{
+        margin-bottom: 10px;
+        font-size: 18px;
+    }  
+}
+
+/* Media end */
